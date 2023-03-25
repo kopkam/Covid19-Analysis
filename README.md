@@ -12,7 +12,7 @@ Download Excel/Google Sheets with the most common SQL queries output.
 Two key datasets for this case study
 
 - <strong> covid_deaths.csv</strong>: Covid-19 global reported cases.
-- 
+ 
 - <strong> covid_vaccinations.csv</strong>: Covid-19 global reported vaccinations.
 
 
