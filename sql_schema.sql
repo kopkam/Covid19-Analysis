@@ -1,9 +1,9 @@
 -- Create the three tables we are going to import of csv data into.
 
 CREATE TABLE CovidDeaths
-	iso_code VARCHAR(255),
-	continent VARCHAR(255),
-	location VARCHAR(255),
+	iso_code VARCHAR(50),
+	continent VARCHAR(50),
+	location VARCHAR(50),
 	date DATETIME,
 	population FLOAT,
 	total_cases FLOAT,
