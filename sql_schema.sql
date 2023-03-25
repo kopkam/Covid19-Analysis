@@ -26,7 +26,7 @@ CREATE TABLE CovidDeaths (
 	weekly_icu_admissions INT,
 	weekly_icu_admissions_per_million FLOAT,
 	weekly_hosp_admissions INT,
-	weekly_hosp_admissions_per_million FLOAT)
+	weekly_hosp_admissions_per_million FLOAT);
 
 
 CREATE TABLE CovidVaccinations (
@@ -75,4 +75,4 @@ CREATE TABLE CovidVaccinations (
 	excess_mortality_cumulative_absolute FLOAT,
 	excess_mortality_cumulative FLOAT,
 	excess_mortality FLOAT,
-	excess_mortality_cumulative_per_million FLOAT )
+	excess_mortality_cumulative_per_million FLOAT);
