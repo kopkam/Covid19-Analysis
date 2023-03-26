@@ -11,9 +11,9 @@ Download Excel/Google Sheets with the most common SQL queries output.
 ## Datasets used
 Two key datasets for this case study
 
-- <strong> covid_deaths.csv</strong>: Covid-19 global reported cases.
+- <strong> covid_deaths.xlsx</strong>: Covid-19 global reported cases.
  
-- <strong> covid_vaccinations.csv</strong>: Covid-19 global reported vaccinations.
+- <strong> covid_vaccinations.xlsx</strong>: Covid-19 global reported vaccinations.
 
 
 The dataset was scapped from https://ourworldindata.org/covid-deaths
