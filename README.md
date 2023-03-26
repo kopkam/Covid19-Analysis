@@ -6,7 +6,7 @@ An SQL analysis of reported crimes in Chicago and the average daily temperature 
   * [Data Analysis Question & Answers](https://github.com/kopkam/Covid19-Analysis/blob/main/questions_and_answers.md)
 
 Download Excel/Google Sheets with the most common SQL queries output.
-  * [Excel/Google Sheets SQL Queries Output](https://ourworldindata.org/covid-deaths)
+  * [Excel SQL Queries Output](https://ourworldindata.org/covid-deaths)
 
 ## Datasets used
 Two key datasets for this case study
