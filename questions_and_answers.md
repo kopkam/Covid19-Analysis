@@ -11,7 +11,7 @@
 #### How many total deaths were reported?
 
 ````sql
-SELECT SUM(total_deaths) AS "Total Reported Deaths"
+SELECT SUM(new_deaths) AS 'Total Reported Deaths'
 FROM CovidDeaths
 WHERE continent IS NOT NULL
 ````
@@ -20,5 +20,5 @@ WHERE continent IS NOT NULL
 
 Total Reported Deaths|
 ---------------------|
-4402422914|
+6869457|
 
