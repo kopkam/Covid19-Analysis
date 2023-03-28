@@ -34,14 +34,14 @@ ORDER BY total_cases DESC
 
 **Results:**
 
-Location      | Total cases |
+Location      |Total cases  |
 --------------|-------------|
 United States	|    102247392|
 China	        |    99109603 |
 India	        |    44689121 |
-France	      |    38538948 |
+France	       |    38538948 |
 Germany	      |    38221663 |
-Brazil	      |    37076626 |
+Brazil	       |    37076626 |
 Japan	        |    33264491 |
 South Korea   |    30581499 |
 Italy	        |    25603510 |
