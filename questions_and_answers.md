@@ -26,7 +26,7 @@ Total Reported Deaths|
 
 ````sql
 SELECT TOP 10 location, SUM(new_cases) AS total_cases
-FROM coviddeaths
+FROM CovidDeaths
 WHERE continent IS NOT NULL
 GROUP BY location
 ORDER BY total_cases DESC
@@ -51,7 +51,7 @@ United Kingdom|     24396534|
 
 ````sql
 SELECT DATENAME(MONTH, date) AS 'Month', SUM(new_cases) AS new_cases
-FROM coviddeaths
+FROM CovidDeaths
 WHERE continent IS NOT NULL
 GROUP BY DATENAME(MONTH, date)
 ORDER BY new_cases DESC;
@@ -72,3 +72,22 @@ May	     |   39216931|
 October	 |   38838304|
 June	    |   32923564|
 
+````sql
+SELECT TOP 10 location, population, MAX(total_cases) AS total_cases, ROUND(MAX((total_cases/population))*100,2) AS PercentPopulationInfected
+FROM CovidDeaths
+WHERE continent IS NOT NULL
+GROUP BY location, population
+ORDER BY PercentPopulationInfected DESC;
+````
+
+location	population	total_cases	PercentPopulationInfected
+Cyprus	896007	650685	72,62
+San Marino	33690	23616	70,1
+Austria	8939617	5943417	66,48
+Faeroe Islands	53117	34658	65,25
+Slovenia	2119843	1330654	62,77
+Gibraltar	32677	20433	62,53
+Martinique	367512	229020	62,32
+Brunei	449002	279661	62,29
+Andorra	79843	47890	59,98
+Jersey	110796	66391	59,92
