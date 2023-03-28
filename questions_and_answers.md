@@ -34,7 +34,7 @@ ORDER BY total_cases DESC
 
 **Results:**
 
-Location      |Total cases  |
+location      |total_cases  |
 --------------|-------------|
 United States	|    102247392|
 China	        |    99109603 |
