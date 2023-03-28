@@ -97,7 +97,7 @@ Brunei	       |    449002|     279661|                    62,29|
 Andorra	      |     79843|      47890|                    59,98|
 Jersey	       |    110796|      66391|                    59,92|
 
-#### What month had the most cases reported?
+#### What month had the most deaths reported?
 
 ````sql
 SELECT TOP 10 location, MAX(total_deaths) AS TotalDeathCount 
@@ -109,15 +109,15 @@ ORDER BY TotalDeathCount DESC;
 
 **Results:**
 
-location	|TotalDeathCount
------------|-------------------------|
-United States|1111342|
-Brazil|699276|
-India|	530775|
-Russia|	396378|
-Mexico|	333100|
-Peru|	219493|
-United Kingdom|	207695|
-Italy|	188322|
-Germany|	168583|
-France|	161397|
+location	     |TotalDeathCount|
+--------------|---------------|
+United States |        1111342|
+Brazil        |         699276|
+India         |	        530775|
+Russia        |        	396378|
+Mexico        |        	333100|
+Peru          |	        219493|
+United Kingdom|        	207695|
+Italy         |	        188322|
+Germany       |	        168583|
+France        |	        161397|
