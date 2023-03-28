@@ -37,13 +37,38 @@ ORDER BY total_cases DESC
 location      |total_cases  |
 --------------|-------------|
 United States	|    102247392|
-China	        |    99109603 |
-India	        |    44689121 |
-France	       |    38538948 |
-Germany	      |    38221663 |
-Brazil	       |    37076626 |
-Japan	        |    33264491 |
-South Korea   |    30581499 |
-Italy	        |    25603510 |
-United Kingdom|    24396534 |
+China	        |     99109603|
+India	        |     44689121|
+France	       |     38538948|
+Germany	      |     38221663|
+Brazil	       |     37076626|
+Japan	        |     33264491|
+South Korea   |     30581499|
+Italy	        |     25603510|
+United Kingdom|     24396534|
+
+#### What month had the most cases reported?
+
+````sql
+SELECT DATENAME(MONTH, date) AS 'Month', SUM(new_cases) AS new_cases
+FROM coviddeaths
+WHERE continent IS NOT NULL
+GROUP BY DATENAME(MONTH, date)
+ORDER BY new_cases DESC;
+````
+
+Month    |Total Cases|
+---------|-----------|
+December |  134720080|
+January  |  132502657|
+February |   74845278|
+March    |   66667546|
+July     |   53389779|
+August   |   52906732|
+April	   |   49768179|
+November |   44141195|
+September|   39512621|
+May	     |   39216931|
+October	 |   38838304|
+June	    |   32923564|
 
