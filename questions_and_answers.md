@@ -108,3 +108,16 @@ ORDER BY TotalDeathCount DESC;
 ````
 
 **Results:**
+
+location	|TotalDeathCount
+-----------|-------------------------|
+United States|1111342|
+Brazil|699276|
+India|	530775|
+Russia|	396378|
+Mexico|	333100|
+Peru|	219493|
+United Kingdom|	207695|
+Italy|	188322|
+Germany|	168583|
+France|	161397|
