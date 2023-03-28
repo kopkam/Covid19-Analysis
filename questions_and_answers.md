@@ -97,7 +97,7 @@ Brunei	       |    449002|     279661|                    62,29|
 Andorra	      |     79843|      47890|                    59,98|
 Jersey	       |    110796|      66391|                    59,92|
 
-#### What month had the most deaths reported?
+#### What are the top ten countries that had the most covid deaths reported?
 
 ````sql
 SELECT TOP 10 location, MAX(total_deaths) AS TotalDeathCount 
