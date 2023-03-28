@@ -80,15 +80,15 @@ GROUP BY location, population
 ORDER BY PercentPopulationInfected DESC;
 ````
 
-location	|population	|total_cases	|PercentPopulationInfected|
----------|-----------|
-Cyprus	|896007	|650685	|72,62|
-San Marino	|33690	|23616	|70,1|
-Austria	|8939617	|5943417	|66,48|
-Faeroe Islands	|53117| 34658|	65,25|
-Slovenia	|2119843	|1330654	|62,77|
-Gibraltar	|32677	|20433	|62,53|
-Martinique	|367512	|229020	|62,32|
-Brunei	|449002	|279661	|62,29|
-Andorra	|79843	|47890	|59,98|
-Jersey	|110796	|66391	|59,92|
+location	     |population|total_cases|PercentPopulationInfected|
+--------------|----------|-----------|-------------------------|
+Cyprus	       |    896007|     650685|                    72,62|
+San Marino	   |     33690|      23616|                     70,1|
+Austria	      |   8939617|    5943417|                    66,48|
+Faeroe Islands|     53117|      34658|                   	65,25|
+Slovenia	     |   2119843|    1330654|                    62,77|
+Gibraltar	    |     32677|      20433|                    62,53|
+Martinique	   |    367512|     229020|                    62,32|
+Brunei	       |    449002|     279661|                    62,29|
+Andorra	      |     79843|      47890|                    59,98|
+Jersey	       |    110796|      66391|                    59,92|
