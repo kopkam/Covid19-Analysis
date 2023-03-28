@@ -74,7 +74,7 @@ May	     |   39216931|
 October	 |   38838304|
 June	    |   32923564|
 
-#### What are the top ten countries that had the most Highest Infection Rate compared to Population?
+#### What are the top ten countries that had the highest percentage infection rate compared to population?
 
 ````sql
 SELECT TOP 10 location, population, MAX(total_cases) AS total_cases, ROUND(MAX((total_cases/population))*100,2) AS PercentPopulationInfected
