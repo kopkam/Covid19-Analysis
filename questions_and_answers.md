@@ -80,7 +80,8 @@ GROUP BY location, population
 ORDER BY PercentPopulationInfected DESC;
 ````
 
-location	|population	|total_cases	|PercentPopulationInfected
+location	|population	|total_cases	|PercentPopulationInfected|
+---------|-----------|
 Cyprus	|896007	|650685	|72,62|
 San Marino	|33690	|23616	|70,1|
 Austria	|8939617	|5943417	|66,48|
