@@ -57,6 +57,8 @@ GROUP BY DATENAME(MONTH, date)
 ORDER BY new_cases DESC;
 ````
 
+**Results:**
+
 Month    |Total Cases|
 ---------|-----------|
 December |  134720080|
@@ -71,6 +73,8 @@ September|   39512621|
 May	     |   39216931|
 October	 |   38838304|
 June	    |   32923564|
+
+#### What are the top ten countries that had the most Highest Infection Rate compared to Population?
 
 ````sql
 SELECT TOP 10 location, population, MAX(total_cases) AS total_cases, ROUND(MAX((total_cases/population))*100,2) AS PercentPopulationInfected
@@ -92,3 +96,15 @@ Martinique	   |    367512|     229020|                    62,32|
 Brunei	       |    449002|     279661|                    62,29|
 Andorra	      |     79843|      47890|                    59,98|
 Jersey	       |    110796|      66391|                    59,92|
+
+#### What month had the most cases reported?
+
+````sql
+SELECT TOP 10 location, MAX(total_deaths) AS TotalDeathCount 
+FROM CovidDeaths
+WHERE continent IS NOT NULL
+GROUP BY location
+ORDER BY TotalDeathCount DESC;
+````
+
+**Results:**
