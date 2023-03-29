@@ -174,10 +174,10 @@ location|	population|	people_vaccinated|	PercentPopulationVaccinated|
 -----------|------------|---------------|---------------|
 Gibraltar	|32677|	42175|	129,07|
 Tokelau|	1893|	2203|	116,38|
-United Arab Emirates|	9441138	9991089	105,83|
-Qatar|	2695131	2851776	105,81|
-Nauru|	12691	13106	103,27|
-Brunei|	449002	450886	100,42|
+United Arab Emirates|	9441138|	9991089|	105,83|
+Qatar|	2695131|	2851776|	105,81|
+Nauru|	12691|	13106|	103,27|
+Brunei|	449002|	450886|	100,42|
 Pitcairn|	47| 47|	100|
 Macao|	695180|	679223|	97,7|
 Cuba|	11212198|	10728943|	95,69|
