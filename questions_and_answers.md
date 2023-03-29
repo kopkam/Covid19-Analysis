@@ -158,3 +158,27 @@ ORDER BY 1, 2;
 total_cases|total_deaths|DeathPercentage|
 -----------|------------|---------------|
 6437598	   |      118970|	          1,85|
+
+#### What are the top ten countries that had the highest percentage of vaccinated peoplee compared to population?
+
+````sql
+SELECT TOP 10 location, population, MAX(people_vaccinated) AS people_vaccinated, ROUND(MAX((people_vaccinated/population))*100,2) AS PercentPopulationVaccinated
+FROM CovidVaccinations
+WHERE continent IS NOT NULL
+GROUP BY location, population
+ORDER BY PercentPopulationVaccinated DESC
+````
+
+
+location|	population|	people_vaccinated|	PercentPopulationVaccinated|
+-----------|------------|---------------|---------------|
+Gibraltar	|32677|	42175|	129,07|
+Tokelau|	1893|	2203|	116,38|
+United Arab Emirates|	9441138	9991089	105,83|
+Qatar|	2695131	2851776	105,81|
+Nauru|	12691	13106	103,27|
+Brunei|	449002	450886	100,42|
+Pitcairn|	47| 47|	100|
+Macao|	695180|	679223|	97,7|
+Cuba|	11212198|	10728943|	95,69|
+Portugal|	10270857|	9780727|	95,23|
