@@ -121,3 +121,26 @@ United Kingdom|        	207695|
 Italy         |	        188322|
 Germany       |	        168583|
 France        |	        161397|
+
+````sql
+SELECT continent, MAX(total_deaths) AS TotalDeathCount 
+FROM CovidDeaths
+WHERE continent IS NOT NULL
+GROUP BY continent
+ORDER BY TotalDeathCount DESC;
+````
+
+#### What continent had the most death reported?
+
+**Results:**
+
+continent	   |TotalDeathCount|
+-------------|---------------|
+North America|	       1111342|
+South America|        	699276|
+Asia	        |         530775|
+Europe	      |         396378|
+Africa	      |         102595|
+Oceania	     |          19447|
+
+
