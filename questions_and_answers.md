@@ -156,6 +156,7 @@ ORDER BY 1, 2;
 **Results:**
 
 total_cases|total_deaths|DeathPercentage|
+-----------|------------|---------------|
 6437598	   |      118970|	          1,85|
 
 #### What is the probability of death from Covid in Poland?
