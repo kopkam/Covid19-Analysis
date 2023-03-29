@@ -159,7 +159,7 @@ total_cases|total_deaths|DeathPercentage|
 -----------|------------|---------------|
 6437598	   |      118970|	          1,85|
 
-#### What are the top ten countries that had the highest percentage of vaccinated peoplee compared to population?
+#### What are the top ten countries that had the highest percentage of vaccinated people compared to population?
 
 ````sql
 SELECT TOP 10 location, population, MAX(people_vaccinated) AS people_vaccinated, ROUND(MAX((people_vaccinated/population))*100,2) AS PercentPopulationVaccinated
