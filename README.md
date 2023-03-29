@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An SQL analysis of reported COVID-19 deaths and vaccinations worldwide.
+An SQL analysis of reported COVID-19 deaths and vaccinations worldwide as of March 8, 2023.
   * [Data Analysis Question & Answers](https://github.com/kopkam/Covid19-Analysis/blob/main/questions_and_answers.md)
 
 Download Excel/Google Sheets with the most common SQL queries output.
