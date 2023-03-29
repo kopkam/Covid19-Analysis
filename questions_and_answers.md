@@ -146,7 +146,7 @@ Oceania	     |          19447|
 #### What is the probability of death from Covid in Poland?
 
 ````sql
-SELECT SUM(new_cases) AS total_cases, SUM(CAST(new_deaths AS int)) AS total_deaths, ROUND(SUM(new_deaths)/SUM(new_cases)*100, 2) AS DeathPercentage
+SELECT SUM(new_cases) AS total_cases, SUM(new_deaths) AS total_deaths, ROUND(SUM(new_deaths)/SUM(new_cases)*100, 2) AS DeathPercentage
 FROM coviddeaths
 WHERE location='Poland'
 AND continent IS NOT NULL
