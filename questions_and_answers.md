@@ -122,6 +122,8 @@ Italy         |	        188322|
 Germany       |	        168583|
 France        |	        161397|
 
+#### What continent had the most death reported?
+
 ````sql
 SELECT continent, MAX(total_deaths) AS TotalDeathCount 
 FROM CovidDeaths
@@ -129,8 +131,6 @@ WHERE continent IS NOT NULL
 GROUP BY continent
 ORDER BY TotalDeathCount DESC;
 ````
-
-#### What continent had the most death reported?
 
 **Results:**
 
@@ -143,4 +143,19 @@ Europe	      |         396378|
 Africa	      |         102595|
 Oceania	     |          19447|
 
+#### What is the probability of death from Covid in Poland?
 
+````sql
+SELECT SUM(new_cases) AS total_cases, SUM(CAST(new_deaths AS int)) AS total_deaths, ROUND(SUM(new_deaths)/SUM(new_cases)*100, 2) AS DeathPercentage
+FROM coviddeaths
+WHERE location='Poland'
+AND continent IS NOT NULL
+ORDER BY 1, 2;
+````
+
+**Results:**
+
+total_cases|total_deaths|DeathPercentage|
+6437598	   |      118970|	          1,85|
+
+#### What is the probability of death from Covid in Poland?
