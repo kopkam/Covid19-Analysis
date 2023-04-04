@@ -136,12 +136,20 @@ ORDER BY TotalDeathCount DESC;
 
 continent	   |TotalDeathCount|
 -------------|---------------|
-North America|	       1111342|
-South America|        	699276|
-Asia	        |         530775|
-Europe	      |         396378|
-Africa	      |         102595|
-Oceania	     |          19447|
+Europe       |	       2023354|
+Asia	        |        1624789|
+North America|        1585879|
+South America|        1351340|
+Africa       |         258757|
+Oceania	     |          25338|
+
+
+Europe	
+Asia	
+North America	
+South America	
+Africa	
+Oceania	
 
 #### What is the probability of death from Covid in Poland?
 
