@@ -159,6 +159,23 @@ total_cases|total_deaths|DeathPercentage|
 -----------|------------|---------------|
 6437598	   |      118970|	          1,85|
 
+
+
+#### How many total vaccinations were reported??
+
+````sql
+SELECT SUM(new_vaccinations) AS 'Total Reported Vaccinations'
+FROM CovidVaccinations
+WHERE continent IS NOT NULL
+````
+
+**Results:**
+
+Total Reported Vaccinations|
+---------------------------|
+10847090480                |
+
+
 #### What are the top ten countries that had the highest percentage of vaccinated people compared to population?
 
 ````sql
@@ -169,6 +186,7 @@ GROUP BY location, population
 ORDER BY PercentPopulationVaccinated DESC
 ````
 
+**Results:**
 
 location            |population|people_vaccinated|	PercentPopulationVaccinated|
 --------------------|----------|-----------------|----------------------------|
