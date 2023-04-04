@@ -170,15 +170,41 @@ ORDER BY PercentPopulationVaccinated DESC
 ````
 
 
-location|	population|	people_vaccinated|	PercentPopulationVaccinated|
------------|------------|---------------|---------------|
-Gibraltar	|32677|	42175|	129,07|
-Tokelau|	1893|	2203|	116,38|
-United Arab Emirates|	9441138|	9991089|	105,83|
-Qatar|	2695131|	2851776|	105,81|
-Nauru|	12691|	13106|	103,27|
-Brunei|	449002|	450886|	100,42|
-Pitcairn|	47| 47|	100|
-Macao|	695180|	679223|	97,7|
-Cuba|	11212198|	10728943|	95,69|
-Portugal|	10270857|	9780727|	95,23|
+location            |population|people_vaccinated|	PercentPopulationVaccinated|
+--------------------|----------|-----------------|----------------------------|
+Gibraltar           |     32677|	           42175|	                     129.07|
+Tokelau             |	     1893|	            2203|	                     116.38|
+United Arab Emirates|	  9441138|	         9991089|                     	105.83|
+Qatar               |	  2695131|         	2851776|	                     105.81|
+Nauru               |	    12691|           	13106|	                     103.27|
+Brunei              |	   449002|	          450886|                     	100.42|
+Pitcairn            |	       47|               47|	                        100|
+Macao               |   	695180|	          679223|	                       97.7|
+Cuba                |	 11212198|        	10728943|	                      95.69|
+Portugal            |	 10270857|	         9780727|                      	95.23|
+
+#### What month had the most tests conducted?
+
+````sql
+SELECT DATENAME(MONTH, date) AS 'Month', SUM(new_tests) AS new_tests
+FROM CovidVaccinations
+WHERE continent IS NOT NULL
+GROUP BY DATENAME(MONTH, date)
+ORDER BY new_tests DESC;
+````
+**Results:**
+
+Month	   |new_tests|
+---------|---------|
+January  |616514583|
+December |519532847|
+February |448604464|
+March    |444610066|
+April    |425868485|
+November |422251490|
+October  |401733631|
+September|390915318|
+May	     |379551504|
+August   |359184031|
+June     |343788020|
+July	    |320967491|
