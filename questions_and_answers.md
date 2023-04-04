@@ -186,7 +186,7 @@ Portugal            |	 10270857|	         9780727|                      	95.23|
 #### What month had the most tests conducted?
 
 ````sql
-SELECT DATENAME(MONTH, date) AS 'Month', SUM(new_tests) AS new_tests
+SELECT DATENAME(MONTH, date) AS 'Month', SUM(new_tests) AS total_tests
 FROM CovidVaccinations
 WHERE continent IS NOT NULL
 GROUP BY DATENAME(MONTH, date)
@@ -194,17 +194,17 @@ ORDER BY new_tests DESC;
 ````
 **Results:**
 
-Month	   |new_tests|
----------|---------|
-January  |616514583|
-December |519532847|
-February |448604464|
-March    |444610066|
-April    |425868485|
-November |422251490|
-October  |401733631|
-September|390915318|
-May	     |379551504|
-August   |359184031|
-June     |343788020|
-July	    |320967491|
+Month	   |total_tests|
+---------|-----------|
+January  |  616514583|
+December |  519532847|
+February |  448604464|
+March    |  444610066|
+April    |  425868485|
+November |  422251490|
+October  |  401733631|
+September|  390915318|
+May	     |  379551504|
+August   |  359184031|
+June     |  343788020|
+July	    |  320967491|
