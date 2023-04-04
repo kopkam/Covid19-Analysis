@@ -208,3 +208,24 @@ May	     |  379551504|
 August   |  359184031|
 June     |  343788020|
 July	    |  320967491|
+
+#### Which continent had the highest percentage of positive tests?
+
+````sql
+SELECT continent, ROUND(AVG(positive_rate), 2) AS AvgPositiveRate
+FROM CovidVaccinations
+WHERE continent IS NOT NULL
+GROUP BY continent
+ORDER BY AvgPositiveRate DESC;
+````
+
+**Results:**
+
+continent    |AvgPositiveRate|
+-------------|---------------|
+South America|	          0,16|
+North America|	          0,13|
+Europe       |	           0,1|
+Asia         |	          0,08|
+Oceania      |	          0,08|
+Africa       |	          0,07|          
