@@ -175,6 +175,30 @@ Total Reported Vaccinations|
 ---------------------------|
 10847090480                |
 
+#### What are the top ten countries that had the highest amount of vaccinations?
+
+````sql
+SELECT TOP 10 location, MAX(total_vaccinations) AS TotalVaccinations 
+FROM CovidVaccinations
+WHERE continent IS NOT NULL
+GROUP BY location
+ORDER BY TotalVaccinations DESC;
+````
+
+**Results:**
+
+total_cases  |TotalVaccinations|
+-------------|-----------------|
+China	       |       3491077000|
+India	       |       2206401818|
+United States|	       672076105|
+Brazil	      |        485268593|
+Indonesia    |	       444303130|
+Japan        |	       382355682|
+Bangladesh   |	       355143411|
+Pakistan     |	       333759565|
+Vietnam      |	       266252632|
+Mexico       |	       223158993|
 
 #### What are the top ten countries that had the highest percentage of vaccinated people compared to population?
 
