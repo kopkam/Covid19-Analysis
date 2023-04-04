@@ -147,7 +147,7 @@ Oceania	     |          19447|
 
 ````sql
 SELECT SUM(new_cases) AS total_cases, SUM(new_deaths) AS total_deaths, ROUND(SUM(new_deaths)/SUM(new_cases)*100, 2) AS DeathPercentage
-FROM coviddeaths
+FROM CovidDeaths
 WHERE location='Poland'
 AND continent IS NOT NULL
 ORDER BY 1, 2;
