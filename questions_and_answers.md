@@ -187,7 +187,7 @@ ORDER BY TotalVaccinations DESC;
 
 **Results:**
 
-total_cases  |TotalVaccinations|
+location     |TotalVaccinations|
 -------------|-----------------|
 China	       |       3491077000|
 India	       |       2206401818|
