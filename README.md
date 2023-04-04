@@ -5,7 +5,10 @@
 An SQL analysis of reported COVID-19 deaths and vaccinations worldwide as of March 7, 2023.
   * [Data Analysis Question & Answers](https://github.com/kopkam/Covid19-Analysis/blob/main/questions_and_answers.md)
 
-Download Excel/Google Sheets with the most common SQL queries output.
+Download Excel with the SQL queries output used in Tableau Public visualization.
+  * [Excel SQL Queries Output](https://github.com/kopkam/Covid19-Analysis/tree/main/tableau_tables)
+
+Download Excel with the most common SQL queries output.
   * [Excel SQL Queries Output](https://github.com/kopkam/Covid19-Analysis/tree/main/excel_sql_queries_output)
 
 ## Datasets used
