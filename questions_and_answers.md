@@ -144,12 +144,6 @@ Africa       |         258757|
 Oceania	     |          25338|
 
 
-Europe	
-Asia	
-North America	
-South America	
-Africa	
-Oceania	
 
 #### What is the probability of death from Covid in Poland?
 
